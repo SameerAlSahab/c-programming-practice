@@ -42,6 +42,14 @@ scanf("%d %d %d", &side1, &side2, &side3);
   else {
     printf("This is not right triangle");
       }
+
+  if ( side1 == side2 && side2 == side3 ) {
+    printf("This is an equilateral triangle");
+  }
+  else if ( side1 == side2 || side2 == side3 || side1 == side3 ) {
+    printf("This is a isoscales triangle");
+  }
+
   
 return 0;
 break;
